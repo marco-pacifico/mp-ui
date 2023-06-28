@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
- 
+import type { Metadata } from "next";
+
 // These styles apply to every route in the application
-import './globalstyles.css'
- 
+import "./globalstyles.css";
+
 export const metadata: Metadata = {
-  title: 'MP UI',
-  description: 'Design System for MP',
-}
- 
+  title: "MP UI",
+  description: "Design System for MP",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-gray-950'>{children}</body>
+      <body className="bg-gray-950">{children}</body>
     </html>
   );
 }
